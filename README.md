@@ -1,78 +1,81 @@
-<div align="center">
+# Pedro Netto
 
-# José Pedro Netto
+**Analista de Dados Júnior | SQL | Python | Power BI | ETL | Data Quality**
 
-### Analista de Dados Júnior | Python | SQL | Pandas | Streamlit
+Utilizo SQL e Python para transformar dados brutos em modelos analíticos, indicadores e visualizações que ajudam a responder perguntas de negócio. Este portfólio reúne projetos com código público, resultados verificáveis e decisões documentadas.
 
-Utilizo SQL e Python para estruturar bases, aplicar regras de negócio e transformar dados em análises reproduzíveis e informações úteis para decisão.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-netto-aaa739297/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/josepedrosoaresdesouzanetto-max)
-[![E-mail](https://img.shields.io/badge/E--mail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:josepedrosoaresdesouzanetto@gmail.com)
-
-</div>
+[LinkedIn](https://www.linkedin.com/in/pedro-netto-aaa739297/) · [GitHub](https://github.com/josepedrosoaresdesouzanetto-max) · [E-mail](mailto:josepedrosoaresdesouzanetto@gmail.com)
 
 ## Sobre mim
 
-Meu foco é análise de dados com ênfase em consultas SQL, preparação de dados, definição de indicadores e comunicação de resultados. Nos projetos públicos, documento o problema, as regras adotadas, as limitações e o caminho necessário para reproduzir a análise.
-
-Busco uma oportunidade como **Analista de Dados Júnior** para aplicar esse repertório em problemas reais de negócio.
+Minha experiência prática vem de projetos de tratamento de dados, ETL, Data Quality, métricas, modelagem analítica e BI. Documento as regras, premissas e limitações de cada análise. Busco uma oportunidade como **Analista de Dados Júnior ou Analista de BI Júnior**.
 
 ## Projetos em destaque
 
-### [Observatório de Acidentes de Trânsito no Brasil](https://github.com/josepedrosoaresdesouzanetto-max/observatorio-acidentes-transito)
+### 1. [Olist Analytics Platform](https://github.com/josepedrosoaresdesouzanetto-max/olist-analytics-platform)
 
-**Problema:** quais fatores aparecem associados à fatalidade nos acidentes registrados em rodovias federais, sem confundir volume absoluto com proporção de ocorrências fatais.
+**Engenharia de dados e BI:** integração de CSV, API REST e Excel para transformar dados operacionais de e-commerce em uma camada analítica confiável.
 
-- **Base:** dados públicos de ocorrências e pessoas/envolvidos da PRF; o relatório versionado cobre 2024, 2025 e parte de 2026.
-- **Tecnologias:** Python, Pandas, SQL, Streamlit, Plotly, Matplotlib e Pytest.
-- **O que foi feito:** pipeline de limpeza e modelagem, variáveis de tempo e gravidade, verificações de qualidade, análise exploratória, relatório, gráficos e dashboard com filtros.
-- **Resultados documentados:** 175.459 ocorrências tratadas. MG lidera em volume no recorte, enquanto MA apresenta o maior percentual de acidentes fatais. O projeto trata associação e causalidade como conceitos distintos e sinaliza 2026 como período parcial.
+**1,55 milhão de registros · 72 regras de qualidade · 36 testes locais aprovados · 7 Data Marts**
 
-### [Inteligência de Clientes em SQL](https://github.com/josepedrosoaresdesouzanetto-max/inteligencia-clientes-sql)
+Pipeline end-to-end com modelo dimensional, reconciliação de métricas, prevenção de double counting e testes automatizados.
 
-**Problema:** como priorizar uma carteira de clientes sem misturar risco de evasão, relacionamento e oportunidade comercial em um único critério pouco explicável.
+**Achado:** 93,23% das entregas elegíveis ocorreram no prazo. Nelas, o review médio foi 4,29, contra 2,27 nas atrasadas — uma associação, sem conclusão causal. Os cenários sintéticos de metas ficam separados desses resultados históricos.
 
-- **Base:** conjunto sintético com 1.000 clientes, versionado no repositório.
-- **Tecnologias:** SQL, SQLite e Python.
-- **O que foi feito:** carga automatizada do CSV, validações de consistência, métricas derivadas, três eixos de score, segmentação com precedência explícita e views para consumo analítico.
-- **Resultados reproduzidos:** 35 clientes estratégicos, 160 clientes com risco de evasão e 127 com potencial de upgrade. O segmento calculado apresentou 68,6% de coerência com o segmento-base simulado, usado apenas como benchmark.
+**Stack:** Python, SQL, DuckDB, ETL, Data Quality, REST API, Excel, Power BI, Pytest e GitHub Actions.
 
-### [PC Blackbox Watchdog](https://github.com/josepedrosoaresdesouzanetto-max/PC-Blackbox-Watchdog)
+*Power BI: modelo, Power Query, DAX e especificação preparados; montagem e validação do PBIX no Desktop ainda pendentes.*
 
-**Projeto complementar de automação e observabilidade.**
+[Resultados e recomendações](https://github.com/josepedrosoaresdesouzanetto-max/olist-analytics-platform/blob/main/reports/business/executive_summary.md) · [Auditoria e testes](https://github.com/josepedrosoaresdesouzanetto-max/olist-analytics-platform/blob/main/docs/final_audit.md)
 
-**Problema:** reunir evidências antes e depois de desligamentos inesperados, travamentos e falhas de hardware no Windows.
+### 2. [Observatório de Acidentes de Trânsito no Brasil](https://github.com/josepedrosoaresdesouzanetto-max/observatorio-acidentes-transito)
 
-- **Fontes:** logs de eventos, registros de confiabilidade, sinais via CIM/WMI, metadados de dumps e amostras locais do sistema.
-- **Tecnologia:** PowerShell.
-- **O que foi feito:** coleta contínua, classificação de eventos, correlação pós-boot, alertas e geração de relatórios em texto, JSON e HTML.
-- **Limite declarado:** a ferramenta organiza evidências e aponta hipóteses; não prova sozinha a causa de uma falha nem executa reparos automáticos.
+**Investigação e análise:** estudo de dados públicos da PRF sobre evolução temporal, diferenças geográficas, gravidade e condições associadas a acidentes fatais em rodovias federais.
 
-## Tecnologias comprovadas nos projetos
+**175.459 ocorrências no relatório versionado · 2024, 2025 e 2026 parcial**
 
-| Área | Tecnologias | Evidência no portfólio |
-| --- | --- | --- |
-| Análise e tratamento | Python, Pandas | limpeza, transformação, agregações e pipeline reproduzível |
-| Consulta e modelagem analítica | SQL, SQLite | CTEs, views, modelo dimensional, regras, scores e segmentação |
-| Visualização | Streamlit, Plotly, Matplotlib | dashboard interativo e gráficos versionados |
-| Qualidade e testes | Pytest | testes unitários e verificações dependentes de dados locais |
-| Automação de sistema | PowerShell | coleta, tratamento de eventos e geração de relatórios |
-| Versionamento e documentação | Git, GitHub | histórico de commits, READMEs e documentação técnica |
+**Achado:** MG lidera em volume de acidentes; MA apresenta a maior proporção de ocorrências fatais no recorte. Volume absoluto e proporção de fatalidade respondem a perguntas diferentes. A análise identifica associações, não causas; 2026 parcial exige cuidado nas comparações anuais.
+
+**Stack:** Python, SQL, Pandas, Streamlit, Plotly e Matplotlib. Pipeline, verificações de qualidade, visualizações e dashboard com filtros acompanham a investigação.
+
+[Relatório e metodologia](https://github.com/josepedrosoaresdesouzanetto-max/observatorio-acidentes-transito/blob/main/relatorios/relatorio_final.md)
+
+### 3. [Inteligência de Clientes em SQL](https://github.com/josepedrosoaresdesouzanetto-max/inteligencia-clientes-sql)
+
+**SQL e regras de negócio:** análise e priorização de uma carteira sintética de 1.000 clientes, com métricas, scores de relacionamento, risco de evasão e oportunidade comercial.
+
+**35 estratégicos · 160 em risco de evasão · 127 com potencial de upgrade**
+
+Resultados reproduzidos com SQL e regras explícitas de segmentação, com precedência para evitar sobreposição. São classificações heurísticas em dados sintéticos, não previsões de churn nem ganhos comerciais reais.
+
+**Stack:** SQL, SQLite e Python — CTEs, views, carga automatizada e validações.
+
+[Regras e scores](https://github.com/josepedrosoaresdesouzanetto-max/inteligencia-clientes-sql/blob/main/docs/logica_do_score.md) · [Resultados reproduzíveis](https://github.com/josepedrosoaresdesouzanetto-max/inteligencia-clientes-sql/blob/main/resultados/exemplos_de_saida.md)
+
+## Tecnologias comprovadas
+
+| Área | Tecnologias e práticas |
+| --- | --- |
+| Análise | Python, Pandas, SQL, análise exploratória |
+| Bancos e modelagem analítica | DuckDB, SQLite, CTEs, views, modelagem dimensional |
+| Engenharia de dados | ETL, APIs REST, Excel, CSV e Parquet |
+| BI e visualização | Streamlit, Plotly, Matplotlib; preparação Power BI com Power Query e DAX |
+| Qualidade | Data Quality, reconciliação, validação de schemas, Pytest |
+| Desenvolvimento | Git, GitHub, GitHub Actions e CI |
 
 ## Competências analíticas
 
-- Estruturação e validação de dados antes da análise.
-- Criação de métricas derivadas, scores e segmentos com regras explícitas.
-- Consultas exploratórias e respostas a perguntas de negócio com SQL.
-- Separação entre dados de origem, regras, resultados e documentação.
-- Comunicação de premissas, limitações e resultados reproduzíveis.
-- Automação de fluxos simples com Python e PowerShell.
+- Tratar e validar dados antes da análise.
+- Construir métricas e indicadores com regras explícitas.
+- Modelar dados e preparar informações para BI.
+- Usar SQL para exploração, segmentação e perguntas de negócio.
+- Comunicar resultados, premissas e limitações.
+
+## Projeto complementar
+
+[**PC Blackbox Watchdog**](https://github.com/josepedrosoaresdesouzanetto-max/PC-Blackbox-Watchdog) — automação e observabilidade em PowerShell para coletar eventos, correlacionar evidências e apoiar o diagnóstico de falhas no Windows.
+A ferramenta organiza hipóteses; não comprova sozinha a causa nem executa reparos automáticos.
 
 ## Contato
 
-- [LinkedIn](https://www.linkedin.com/in/pedro-netto-aaa739297/)
-- [GitHub](https://github.com/josepedrosoaresdesouzanetto-max)
-- [E-mail](mailto:josepedrosoaresdesouzanetto@gmail.com)
-
-<!-- Portfólio: adicione o link aqui quando o site estiver publicado. -->
+[LinkedIn](https://www.linkedin.com/in/pedro-netto-aaa739297/) · [josepedrosoaresdesouzanetto@gmail.com](mailto:josepedrosoaresdesouzanetto@gmail.com)
