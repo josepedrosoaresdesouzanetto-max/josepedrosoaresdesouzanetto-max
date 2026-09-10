@@ -8,7 +8,9 @@ Utilizo SQL e Python para transformar dados brutos em modelos analíticos, indic
 
 ## Sobre mim
 
-Minha experiência prática vem de projetos de tratamento de dados, ETL, Data Quality, métricas, modelagem analítica e BI. Documento as regras, premissas e limitações de cada análise. Busco uma oportunidade como **Analista de Dados Júnior ou Analista de BI Júnior**.
+Tenho desenvolvido projetos de tratamento de dados, ETL, Data Quality, métricas, modelagem analítica e BI, sempre documentando as regras, premissas e limitações de cada análise.
+
+Busco minha primeira oportunidade como **Analista de Dados Júnior ou Analista de BI Júnior**, com SQL e Python como base técnica e Power BI em desenvolvimento.
 
 ## Projetos em destaque
 
@@ -74,6 +76,7 @@ Resultados reproduzidos com SQL e regras explícitas de segmentação, com prece
 ## Projeto complementar
 
 [**PC Blackbox Watchdog**](https://github.com/josepedrosoaresdesouzanetto-max/PC-Blackbox-Watchdog) — automação e observabilidade em PowerShell para coletar eventos, correlacionar evidências e apoiar o diagnóstico de falhas no Windows.
+
 A ferramenta organiza hipóteses; não comprova sozinha a causa nem executa reparos automáticos.
 
 ## Contato
